@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**An end-to-end machine learning system that identifies at-risk students before they drop out — built with a Gradient Boosting classifier, a FastAPI inference backend, and a real-time web interface.**
+**An end-to-end machine learning system that identifies at-risk students before they drop out, built with a Gradient Boosting classifier, a FastAPI inference backend, and a real-time web interface.**
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=flat-square&logo=fastapi&logoColor=white)
@@ -17,9 +17,9 @@
 
 ## Overview
 
-Universities lose students every semester to dropout — and most of the time, the warning signs were already there in the data. This project turns those signals into action.
+Universities lose students every semester to dropout, and most of the time, the warning signs were already there in the data. This project turns those signals into action.
 
-The system takes eight student attributes as input and returns a real-time dropout probability with a breakdown of the contributing risk factors. The entire pipeline — from raw CSV to a live prediction API — is contained in this repository.
+The system takes eight student attributes as input and returns a real-time dropout probability with a breakdown of the contributing risk factors. The entire pipeline from raw CSV to a live prediction API is contained in this repository.
 
 This was built as a Data Science end-to-end semester project for the **Department of Computer Science, Islamia College University Peshawar**, under the supervision of **Dr. Naveed Abbas**.
 
@@ -66,11 +66,11 @@ Four classifiers were trained and evaluated on the same dataset and pipeline:
 | Random Forest | 86.5% | 94.1% |
 | **Gradient Boosting** ✅ | **88.0%** | **96.6%** |
 
-Gradient Boosting was selected as the final model. On 200 held-out test students, it correctly identified 176 — with only 10 false alarms.
+Gradient Boosting was selected as the final model. On 200 held-out test students, it correctly identified 176, with only 10 false alarms.
 
 ### Feature Importance
 
-The two most influential predictors are attendance and CGPA, together accounting for 44% of the model's decisions. This matches real-world intuition — a student who stops showing up and whose grades are falling is already partway out the door.
+The two most influential predictors are attendance and CGPA, together accounting for 44% of the model's decisions. This matches real-world intuition: a student who stops showing up and whose grades are falling is already partway out the door.
 
 | Feature | Importance |
 |---|---|
